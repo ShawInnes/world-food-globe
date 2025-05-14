@@ -1,4 +1,4 @@
-import Globe from 'react-globe.gl';
+import Globe from "react-globe.gl";
 
 function App() {
   const gData = [
@@ -6,22 +6,29 @@ function App() {
       lat: 48.864716,
       lng: 2.3514,
       size: 0.1,
-      color: 'green',
-      label: 'The French Table',
+      color: "green",
+      label: "The French Table",
     },
     {
       lat: 19.4326,
       lng: -99.1332,
       size: 0.1,
-      color: 'red',
-      label: 'Chockie Bakehouse',
+      color: "red",
+      label: "Chockie Bakehouse",
     },
     {
       lat: -33.4489,
       lng: -70.6693,
       size: 0.1,
-      color: 'red',
-      label: 'Bite Me Cafe',
+      color: "red",
+      label: "Bite Me Cafe",
+    },
+    {
+      lat: 35.6762,
+      lng: 139.6503,
+      size: 0.1,
+      color: "green",
+      label: "Hajime",
     },
   ];
 
@@ -36,11 +43,10 @@ function App() {
         pointLabel="label"
         pointRadius={0.2}
         pointResolution={50}
-
         labelsData={gData}
         labelText="label"
         labelDotRadius={2}
-        labelColor={() => 'rgba(255, 165, 0, 0.75)'}
+        labelColor={() => "rgba(255, 165, 0, 0.75)"}
         labelSize={2}
       />
     </>
